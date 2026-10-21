@@ -1,145 +1,132 @@
-# Xbox Sales Intelligence | Dashboard Interativo de Vendas 🎮
+# Xbox Sales Intelligence
 
-<p align="center">
-  <img src="images/visao-geral.png" alt="Visão geral do Xbox Sales Intelligence" width="950">
-</p>
+**Dashboard de análise de assinaturas, faturamento e metas em Microsoft Excel.**
 
-**Uma solução de análise de vendas em Microsoft Excel com quatro dashboards interativos, indicadores dinâmicos, gráficos e navegação integrada.**
+O Xbox Sales Intelligence reúne quatro painéis para acompanhar o desempenho de uma base demonstrativa de assinaturas Xbox. A solução combina tabelas dinâmicas, segmentações de dados e indicadores para comparar planos, modalidades, renovação automática e complementos.
 
-O **Xbox Sales Intelligence** transforma uma base de assinaturas Xbox em uma experiência visual de acompanhamento comercial. O projeto reúne análises de faturamento, planos, modalidades de assinatura, renovação automática, complementos **EA Play** e **Minecraft**, além do acompanhamento de metas.
+**[Baixar planilha](Dashboard%20Xbox.xlsx)** · **[Visualizar painéis](#demonstração-dos-painéis)** · **[Consultar metodologia](#metodologia)**
 
-Desenvolvido como projeto prático de aprendizado no **Santander Bootcamp Excel com Inteligência Artificial, da DIO**, com ampliação e personalização do dashboard de referência utilizado nas aulas.
-
-📊 **[Baixar a planilha Excel](Dashboard%20Xbox.xlsx)** · [Ver os dashboards](#demonstração-visual)
-
-> **Importante:** os valores apresentados são de uma base demonstrativa do desafio e não representam dados de vendas oficiais da Xbox. Para utilizar os filtros, gráficos e botões de navegação, abra o arquivo preferencialmente no **Microsoft Excel para desktop**.
+> Projeto educacional. Os dados apresentados não representam resultados comerciais oficiais da Xbox.
 
 ## Objetivo
 
-Construir um painel de acompanhamento comercial que permita responder, de maneira rápida, a perguntas como:
+Transformar registros de assinaturas em informações para acompanhamento comercial, com uma interface que facilite a leitura dos resultados e a comparação entre diferentes segmentos da base.
 
-- Qual é o faturamento total das assinaturas?
-- Quantas assinaturas foram registradas e qual é o ticket médio?
-- Quais planos e modalidades geram mais receita?
-- Qual é a participação das assinaturas com renovação automática?
-- Quanto EA Play e Minecraft representam nas receitas dos complementos?
-- Quais metas de faturamento e renovação já foram atingidas? Quanto ainda falta?
+## Demonstração dos painéis
 
-## Destaques do projeto
+| Visão Geral | Vendas |
+|:---:|:---:|
+| ![Painel Visão Geral](images/visao-geral.png) | ![Painel Vendas](images/vendas.png) |
+| Faturamento, assinaturas, ticket médio e renovação automática. | Receita por plano, modalidade e configuração de renovação. |
 
-- **Quatro dashboards especializados** com a mesma identidade visual.
-- **Segmentação de dados interativa** por modalidade: Monthly, Quarterly e Annual.
-- **Cards de KPIs vinculados aos cálculos**, atualizados conforme a seleção.
-- **Gráficos comparativos** para análise de faturamento, assinaturas, renovação e metas.
-- **Tabelas dinâmicas e fórmulas** organizadas em uma aba de apoio.
-- **Menu lateral navegável** com hiperlinks internos, sem necessidade de VBA.
-- **Identidade visual personalizada**, com ícones SVG, avatar, paleta inspirada no Xbox e layout consistente.
+| Complementos | Metas e OKRs |
+|:---:|:---:|
+| ![Painel Complementos](images/complementos.png) | ![Painel Metas e OKRs](images/metas-e-okrs.png) |
+| Receitas e participação de EA Play e Minecraft. | Atingimento das metas e distância até os objetivos. |
+
+## Perguntas de negócio
+
+- Qual é o faturamento total e o ticket médio por assinatura?
+- Quais planos concentram receita e volume de assinaturas?
+- Como a receita se distribui entre as modalidades mensal, trimestral e anual?
+- Qual é a proporção de assinaturas com renovação automática?
+- Qual é a participação de EA Play e Minecraft na receita dos complementos?
+- Quanto falta para atingir as metas de faturamento e renovação automática?
 
 ## Indicadores principais
 
-Os números abaixo ilustram a **visão consolidada, sem filtros**:
+Resultados consolidados da base, sem filtros:
 
 | Indicador | Resultado |
-|---|---:|
+|:---|---:|
 | Faturamento total | **R$ 7.633,00** |
-| Total de assinaturas | **295** |
+| Assinaturas registradas | **295** |
 | Ticket médio | **R$ 25,87** |
 | Renovação automática | **50,17%** |
-| Receita EA Play | **R$ 2.940,00** |
-| Receita Minecraft | **R$ 3.880,00** |
+| Receita de EA Play, antes dos cupons | **R$ 2.940,00** |
+| Receita de Minecraft, antes dos cupons | **R$ 3.880,00** |
 | Atingimento da meta de faturamento | **89,80%** |
-| Atingimento da meta de renovação | **83,62%** |
+| Atingimento da meta de renovação automática | **83,62%** |
 
-*Os resultados dos dashboards mudam quando a segmentação de modalidades é utilizada. As metas permanecem como referências de comparação.*
+> O faturamento total já inclui os complementos e desconta os cupons. As receitas de EA Play e Minecraft não devem ser somadas novamente ao total.
 
-## Estrutura da pasta de trabalho
+## Destaques da análise
 
-| Aba | Finalidade |
-|---|---|
-| **BASES** | Dados de origem das assinaturas Xbox, planos, modalidades e complementos. |
-| **CÁLCULOS** | Tabelas dinâmicas, fórmulas, consolidações e indicadores usados pelos dashboards. |
-| **VISÃO GERAL** | Faturamento total, assinaturas, ticket médio, renovação e desempenho por plano. |
-| **VENDAS** | Receitas por plano e modalidade, renovação automática e identificação dos líderes. |
-| **COMPLEMENTOS** | Receitas, participação e quantidades relacionadas a EA Play e Minecraft. |
-| **METAS E OKRs** | Acompanhamento da receita e da renovação frente às metas estabelecidas. |
+- **Ultimate** lidera o faturamento por plano, com **R$ 5.388,00**.
+- **Monthly** apresenta a maior receita entre as modalidades, com **R$ 3.571,00**.
+- **Minecraft** representa **56,89%** da receita dos complementos antes dos cupons.
+- Faltam **R$ 867,00** para a meta de faturamento de R$ 8.500,00.
+- A proporção de renovação automática está **9,83 pontos percentuais** abaixo da meta de 60%.
 
-## Demonstração visual
+## Metodologia
 
-### 1. Visão Geral — panorama executivo
+A pasta de trabalho separa dados, processamento e apresentação:
 
-Indicadores principais e comparação de faturamento e volume de assinaturas por plano.
+| Camada | Abas | Finalidade |
+|:---|:---|:---|
+| **Dados** | BASES | Registros de assinaturas, planos, modalidades, complementos e cupons. |
+| **Processamento** | CÁLCULOS | Tabelas dinâmicas, consolidações e fórmulas dos indicadores. |
+| **Apresentação** | VISÃO GERAL, VENDAS, COMPLEMENTOS e METAS E OKRs | Exploração dos resultados nos quatro painéis. |
 
-![Dashboard Visão Geral](images/visao-geral.png)
+### Regras dos indicadores
 
-### 2. Vendas — desempenho comercial
+| Indicador | Definição |
+|:---|:---|
+| **Faturamento total** | Soma de `Total Value`: preço da assinatura + preços dos complementos − cupom. |
+| **Assinaturas registradas** | Contagem dos registros da base. |
+| **Ticket médio** | Faturamento total ÷ quantidade de assinaturas. |
+| **Renovação automática** | Registros com `Auto Renewal = Yes` ÷ total de assinaturas. |
+| **Participação dos complementos** | Receita de cada complemento ÷ receita conjunta dos complementos. |
+| **Atingimento das metas** | Resultado realizado ÷ meta de referência. |
 
-Análise de receita por plano, modalidade e renovação automática, com destaque para os líderes de faturamento.
+### Cuidados na interpretação
 
-![Dashboard Vendas](images/vendas.png)
+- A **renovação automática** representa a configuração registrada na base, não a ocorrência de uma renovação concluída.
+- Uma assinatura pode incluir **os dois complementos**; suas quantidades não correspondem a grupos exclusivos.
+- Como os cupons não são distribuídos entre produtos, as receitas individuais dos complementos são apresentadas **antes dos descontos**.
 
-### 3. Complementos — EA Play e Minecraft
+### Estrutura de apoio
 
-Receitas individuais, participação de cada complemento, quantidades de assinaturas e identificação do complemento líder.
+| BASES | CÁLCULOS |
+|:---:|:---:|
+| ![Aba BASES](images/base-de-dados.png) | ![Aba CÁLCULOS](images/calculos.png) |
+| Dados de origem das assinaturas. | Consolidações e indicadores dos painéis. |
 
-![Dashboard Complementos](images/complementos.png)
+## Tecnologias e recursos
 
-### 4. Metas e OKRs — resultados e objetivos
-
-Comparação entre faturamento realizado e meta, percentuais de atingimento e distância para alcançar os objetivos.
-
-![Dashboard Metas e OKRs](images/metas-e-okrs.png)
-
-<details>
-<summary><strong>Ver a estrutura de apoio: BASES e CÁLCULOS</strong></summary>
-
-#### Base de dados
-
-![Aba BASES](images/base-de-dados.png)
-
-#### Tabelas dinâmicas e indicadores
-
-![Aba CÁLCULOS](images/calculos.png)
-
-</details>
-
-## Recursos do Excel utilizados
-
-- **Tabelas dinâmicas** para consolidar vendas por plano, modalidade e renovação;
-- **Segmentação de dados** conectada às análises;
-- **Fórmulas e referências entre planilhas**, incluindo busca de valores em tabelas dinâmicas e tratamento de erros;
-- **Gráficos de barras e colunas**, com rótulos de dados e escalas ajustadas;
-- **Indicadores e comparações percentuais** para acompanhamento de metas;
-- **Formatação personalizada, ícones SVG e elementos visuais**;
-- **Hiperlinks entre abas** para navegação.
+| Recurso | Aplicação |
+|:---|:---|
+| **Microsoft Excel** | Ambiente de análise e apresentação. |
+| **Tabelas dinâmicas** | Consolidação dos dados por plano, modalidade e renovação. |
+| **Segmentações de dados** | Filtros por Annual, Monthly e Quarterly. |
+| **Fórmulas e referências entre abas** | Alimentação dos indicadores. |
+| **Gráficos de barras e colunas** | Comparação de receitas e quantidades. |
+| **Formas, ícones e formatação personalizada** | Composição visual dos painéis. |
+| **Hiperlinks internos** | Navegação pelo **menu lateral**. |
 
 ## Como utilizar
 
-1. **[Baixe o arquivo Excel](Dashboard%20Xbox.xlsx)** disponível neste repositório.
-2. Abra-o no **Microsoft Excel para desktop**.
+1. **[Baixe o arquivo Excel](Dashboard%20Xbox.xlsx)**.
+2. Abra no **Microsoft Excel para desktop**.
 3. Comece pela aba **VISÃO GERAL**.
-4. Use **FILTRAR MODALIDADE** para selecionar Annual, Monthly, Quarterly ou combinar modalidades.
-5. Navegue entre **VENDAS**, **COMPLEMENTOS** e **METAS E OKRs** pelo menu lateral.
-6. Consulte a aba **CÁLCULOS** caso queira estudar as tabelas e as fórmulas usadas.
-7. Se alterar a base de dados, utilize **Dados → Atualizar Tudo** e valide o intervalo de origem das tabelas dinâmicas.
+4. Utilize **FILTRAR MODALIDADE** para explorar os resultados.
+5. Navegue entre os painéis pelo **menu lateral**.
+6. Consulte **BASES** e **CÁLCULOS** para acompanhar a origem dos indicadores.
 
-> **Observação:** os indicadores de complementos são apurados separadamente por produto. A mesma assinatura pode incluir EA Play e Minecraft; portanto, suas quantidades não representam grupos necessariamente exclusivos.
+> **Observação de uso:** foi relatado que os cartões podem abrir zerados e exibir os valores após uma seleção no filtro. A causa desse comportamento ainda está em investigação.
 
-## Decisões de desenvolvimento
+## Arquivos do repositório
 
-O arquivo foi dividido em uma **camada de dados** (BASES), uma **camada de processamento** (CÁLCULOS) e uma **camada de apresentação** (quatro dashboards). Essa separação facilita a conferência dos resultados e a evolução da solução.
+| Arquivo ou pasta | Conteúdo |
+|:---|:---|
+| [Dashboard Xbox.xlsx](Dashboard%20Xbox.xlsx) | Pasta de trabalho com dados, cálculos e painéis. |
+| README.md | Documentação do projeto. |
+| [images/](images/) | Capturas dos quatro dashboards e das duas abas de apoio. |
 
-A interface visual foi desenvolvida para manter consistência entre páginas: menu lateral, filtros, cartões de indicadores, dois gráficos por área analítica e destaques adicionais. A navegação funciona com recursos nativos do Excel, sem macros.
+## Desenvolvimento e créditos
 
-O dashboard didático inicial serviu como **referência de aprendizagem**. A organização das quatro páginas, os indicadores adicionais, a navegação e a personalização visual integram a evolução desenvolvida para este portfólio.
-
-## Aprendizados
-
-O projeto reforçou a construção de **dashboards orientados a perguntas de negócio**, a ligação entre tabelas dinâmicas e indicadores, o uso responsável das escalas dos gráficos e a importância de testar filtros, fórmulas e navegação antes de publicar uma solução.
-
-## Autoria e créditos
-
-**Desenvolvimento e personalização:** [@camisarp](https://github.com/camisarp) · [LinkedIn](https://www.linkedin.com/in/camila-ribeiro-pinto/)
+**Desenvolvimento e personalização:** Camila Ribeiro · [GitHub](https://github.com/camisarp) · [LinkedIn](https://www.linkedin.com/in/camila-ribeiro-pinto/)
 
 **Contexto educacional:** Santander Bootcamp Excel com Inteligência Artificial — [DIO](https://www.dio.me/).
 
-*Projeto desenvolvido para fins de estudo e portfólio, a partir de uma base demonstrativa e de material didático do curso.*
+Projeto desenvolvido utilizando exclusivamente a **base de dados fornecida no curso**, com quatro painéis, indicadores e identidade visual personalizada.
